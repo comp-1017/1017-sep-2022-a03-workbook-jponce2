@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
+        <title>on the page title tab</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Joshua Ponce">
         <!--
             this structure is a comment block in html files
             everything in this structure is NOT considered part of any
@@ -23,9 +26,7 @@
             
             
         -->
-        <title>on the page title tab</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Joshua Ponce">
+        
     </head>
     <body>
         <!--
@@ -104,11 +105,45 @@
         -->
         <a href="https://www.nait.ca" target="_Blank">Go to NAIT</a>
 
+        <h3>Image Tag</h3>
+        <!--
+            Empty (Void) tag
+            The image tag does not have a closing tag becasue there is 
+                no content to display
+            Parameters:
+                src= "relative web site location"
+                alt= "printable text if image is not found on file"
+                [title "tool tip text for the image"]
+
+            The relative path is from the top of your web site
+                down/up to the file/page you desire to reference
+
+            Down: include all subfolder names and the final file name
+                sf1/sf2/.../fn
+
+            Up: use the string .. to do up a level (subfolder)
+                ../../sf1/fn
+        -->
+        <img src="img/photoshop.png" alt="photoshop logo"
+            title="The Adobe Photoshop Logo">
+        
+
+        <img src="img/1244b2c7cbe3d01799d38b4066ec894b.jpg" alt="yea"
+            title="The Abomination">
 
 
 
+        <img src="img/saul-goodman-better-call-saul.gif" alt="yea"
+            title="Yes">
 
+        <!--
+            Can I use an image as the link to the www.adobe.com?
+        -->
 
+        <a href="https://www.adobe.com" target="_Blank">Sinigang ADOBO</a>
+            <img src="img/photoshop.png" alt="photoshop logo"
+            title="Adobo Sinigang">
+            
 
 
 
