@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>on the page title tab</title>
-        <meta charset="utf - 8">
+        <title> Tables </title>
+        <meta charset="utf-8">
         <meta name="author" content="Joshua Ponce">
     </head>
     <body>
+        <h1> Tables </h1>
+        <p>
+            Looking for the Best Canadian Web Hosting? We’ve reviewed the top Canadian web hosts and below you’ll find coupons and discounts for the Top Canadian Hosting providers.
+            More and more Canadians are looking for their website to be hosted in Canada to benefit from search engine rankings and to ensure their privacy is protected 
+            by Canadian laws.  If you’re a Canadian business looking for a suitable hosting provider then take a look at our list below of Canadian web hosts.
+        </p>
 
+        <!--
+            <table>: specifies a table
+                <thead> : specifies the column header area, defaults to bold
+                    <tr> : specifies the beginning of a row anywhere in the table
+                        <th></th> : specifies a cell in the thead area
+                    </tr>
+                </thead>
+            </table>
+            <body>
+                <tr>
+                    < td></td> : specifies a content cell in the tbody area
+                                 for each th you should have a td
+                </tr>
+            </body>
+            <tfoot> : specifies the footer area of your table
+                      commonly used for totals, note messages, etc.
+                <tr>
+                    <td></td>
+                </tr>
+            </tfoot>
+            
+        </table>
+        -->
+        <!-- border is obsolete, it is a known error, you may use this until
+                we learn some css
+        -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th> Host Name </th>
+                    <th> Bandwidth </th>
+                    <th> Price </th>
+                    <th> Money Back </th>
+                    <th> Coupon </th>
+                    <th> Rating </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> HostUpon </td>
+                    <td> Unlimited </td>
+                    <td> $3.68/mo </td>
+                    <td> 30 days </td>
+                    <td> 15% off </td>
+                    <td> 5 </td>
+                </tr>
+                <tr>
+                    <td> BlueHost </td>
+                    <td> Unlimtied </td>
+                    <td> $6.99/mo </td>
+                    <td> anytime </td>
+                    <td> $3.95/mo* </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> HostGator </td>
+                    <td> Unlimited </td>
+                    <td> $3.71/mo </td>
+                    <td> 45 days </td>
+                    <td> 20% </td>
+                    <td> 4 </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tf>
+                    <!--
+                        one can merge cells on a table within a row
+                        to merge the cells use the columnspan = "n" parameter on your
+                        <td> tag.
+                        you can merge up to the total number of columns
+                        you can have multiple merged columns as long as the 
+                        total of all merged cells does not exceed the total
+                        number of column on your table.
+                        Examples:
+                            <td colonspans="3"></td>
+                            <td></td>
+                            <td colonspans="2"></td>
+                    -->
+                    <td colonspan="6" >
+                        * Limited to 3 months of service
+                    </td>
+                </tf>
+            </tfoot>
+        </table>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th> Imagine </th>
+                    <td img src="img/money.png" alt="better call saul"></td>
+                </tr>
+                <tr>
+                    <th> Imagine </th>
+                    <td img src="img/phone.png" alt="abomination"></td>
+                </tr>
+                <tr>
+                    <th> Imagine </th>
+                    <td img src="img/server.png" alt="study"></td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
