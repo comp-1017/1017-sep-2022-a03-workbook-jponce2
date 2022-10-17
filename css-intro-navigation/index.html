@@ -18,7 +18,7 @@
             </nav>
         </header>
         <main>
-            <section>
+            <aside>
                 <h2>Create navigational links within a web site</h2>
                 <p>There are several technique to navigate within a web site. The semantic tag for navigation is the &lt;, nav$&gt; tag. You can navigate through your web site by using relative addressing. For out example we will use the unorder list tag (&lt;ul&gt;).</p>
                 <ul>
@@ -28,6 +28,41 @@
                     <li>going to a specific place on the current page (on page navigation)</li>
                 </ul>
                 <p>Navigational menus are placedin your &lt; header &gt; semantic area. They  may also be placed in your &lt;footer&gt; area as a sitemap. The nav tag like other semantic tags should have a an &lt;hx&gt; tag. HOWEVER this tag is optional. Of uou wait the header tag you will receive an document outliner error. Untitled section. Until you are shown how to avoid this error message, it will be acceptable on your coducoment outliner.</p>
+            </aside>
+            <section>
+                <h2>CSS Coding Styles Summary</h2>
+                <table border="1">
+                    <tbody>
+                        <tr>
+                            <td>Browser defaults (no CSS)</td>
+                            <td width = "400px">You have no control over the styling</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Inline</td>
+                            <td>this is for a single specific element (tag) instance your CSS will be specified in a parameter within the element. This CSS affects ONLY the element tag that contains the specification.</td>
+                            <td>style = "rule, [rule;.....]"</td>
+                            <td>style = "color, red; width:50px"</td>
+                        </tr>
+                        <tr>
+                            <td>Embedded</td>
+                            <td>The specification of CSSS as embedded happens in your &lt; head &gt; area. This CSS affects all similar elements on the web page where the CSS is coded.</td>
+                            <td>&lt;<style> selector{color:red; width:50px;}
+                                [selector{rule; [rule; ...]} ...]</style>style> p {color:red; width:50px;}
+                                hi {font-style:italic}</style></td>
+                            <td>&lt;<style> selector{color:red; width:50px;}
+                                [selector{rule; [rule; ...]} ...]</style>style> p {color:red; width:50px;}
+                                hi {font-style:italic}</style></td>
+                        </tr>
+                        <tr>
+                            <td>link (stylesheet)</td>
+                            <td>This is the preferred method of doing CSS. You place your CSS in a seperate physical file. This file can then be used on ANY web page in your web site. The link to this file will be done in your &lt; head &gt; area. The CSS in this file is similar to embedded EXCEPT there is no style tag</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
         </main>
