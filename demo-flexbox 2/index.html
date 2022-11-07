@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Joshua Ponce">
+    <title>css-flexbox</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Flexbox Wrapped Items</h1>
+        </header>
+        <main>
+            <div class="aside"></div>
+            <div>
+                <!--THe item within this div are NOT immedietely
+                use main
+                the item within this div are immedietly under 
+                the div
+                these items are not affected by the main flexbox
+                therefore these items are by default "Stacked"-->
+                <div class="blue"></div>
+                <div class="green"></div>
+            </div>
+           
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>

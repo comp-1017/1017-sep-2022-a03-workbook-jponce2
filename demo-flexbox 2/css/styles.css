@@ -1,0 +1,100 @@
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-family: Helvetica, Verdana, sans-serif;
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+/* YOUR STYLES */
+/******************************************************
+Margin = Top right bottom left
+******************************************************/
+
+main{
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+	border: 2px solid black;
+}
+
+.aside{
+    height: 600px;
+    width: 150px;
+    background-color: red;
+    margin: 10px 0 10px 10px;
+	border: 2px solid black;
+}
+/*
+criteria
+margin: 10px betweeen outer edges and boxes (red, blue and green)
+Margin: 10px betweeen inner the boxes (red, green, and blue)
+broder: of 2px around boxes and main
+
+calculation of width for blue and green. red given as 150px
+
+960 = column 1 + column 2 + right margin/main borders
+960 = (lm + lb + lp + content + rp + rb + rp) * (lm + lb + lp + content + rp + rb + rp)
+960 = (10 + 2 + 0 + 150 + 0 + 0 + 2 + 0) (10 + 2 + 0 + content + 0 + 2 + 0) + 14
+960 = 192 + content
+768 = content
+*/
+
+.blue{
+    height: 293px;
+    width: 768px;
+    background-color: blue;
+    margin: 10px 0 10px 10px;
+	border: 2px solid black;
+}
+/*
+The height of the right column Item can use a similar
+    calculation as the horizontal width layout
+
+The one item you must rember is that the vertical margin
+    between items are collapsed
+
+The largest i use between any two single item
+
+aside is 600px
+
+600 = 2(tb + tp + content + bp + bb) + 
+600 = (2)(2 + 0 + content + 0 + 2) + 10
+600 = 2 * 4 + 10 + 2 * content
+600 = 18 + 2 * content
+582 / 2 = content
+291 = content
+
+this only works because the content area height is the same and 
+     the vertical margin is the same
+*/
+
+.green{
+    height: 293px;
+    width: 768px;
+    background-color: green;
+    margin: 0 10px 10px 10px;
+	border: 2px solid black;
+}
+/*
+956 = lm + lb + lp + content + rp + rb + rm + remainder
+956 = 15 + 2 + 10 + content + 10 + 2 + 7.5 + 634.9
+956 = 27 + content + 19.5 + 634.9
+956 = 681.4 + content 
+956 - 681.4 = content 
+274.6 = content 
+*/
+
