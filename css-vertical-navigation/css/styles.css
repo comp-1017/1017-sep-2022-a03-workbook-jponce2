@@ -9,3 +9,70 @@ body {
 	line-height: 1.5;
 }
 
+header {
+	height: 70px;
+	background-color: #fff;
+	border-bottom: 1px solid #959372;
+}
+
+header > h1 {
+	display: none;
+}
+
+/*When you use a class, you can assign the class to any matter of element tags
+ in your html unlike using element selectors which are specific to that selector
+ 
+ example:
+ .hidden {
+	display: none;
+ }
+ 
+ */
+
+header > img {
+	margin: 14px;
+}
+
+/*style the banner
+  move the banner down by using the margin-top
+  added the backround maige which has no effect on physical conntent size 
+  adjusted height (content height) to image size
+  added padding (caused a problem from image height, beginning to repeat image)
+  adjusted height (content height) to account for the add padding
+  */
+
+.banner{
+	margin-top: 60px;
+	padding: 50px 0 0 680px;
+	background-image: url(../img/flower-banner.jpg);
+	height: 420px; /*480px - 60px padding */
+}
+
+.banner h2 {
+	font-family: 'Alegreya', serif;
+	font-size: 36px;
+	color: #f9ea4f;
+}
+
+/*handle the anchor elements for the menu*/
+
+.banner a {
+	text-decoration: none;
+	color: #faf9f8;
+	font-size: 18px;
+}
+
+/* use the hover pseudo class of the anchor tag to alter the color
+	of the anchor tax text when the cursor is moved over the anchor tag
+	this will draw the user attention to the line*/
+
+.banner a:hover {
+	color: #f9ea4f;
+}
+
+/* instead of using a margin to seperate the li items, you can use 
+	the rule line-height*/
+
+.banner li {
+	line-height: 40px;
+}
